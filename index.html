@@ -1,16 +1,16 @@
-
 <!DOCTYPE html>
 <html>
 	<head>
 		<title>6BM</title>
 		<meta charset="UTF-8">
+		<link rel="stylesheet" href="styles.css">
 	</head>
 	<body>
 		<!-- nawigacja -->
-		<section>
-			<header>
-				<img src="./6BM_zdjecia/logo.png"/>
-			</header>
+		<header class="page-header">
+			<h1>
+				<img src="./6BM_zdjecia/logo.png" alt="6BM logo" />
+			</h1>
 			<nav>
 				<ul class="main-menu">
 					<li class="main-menu__item"><a href="#home">Home</a></li>
@@ -21,137 +21,151 @@
 					<li class="main-menu__item"><a href="#contact">Contact</a></li>
 				</ul>
 			</nav>
-			<footer>
-				<ul class="social-media-menu">
-					<li class="social-media-menu__item"><a href="http://fb.com"><img src="./6BM_zdjecia/fb.svg"/></a></li>
-					<li class="social-media-menu__item"><a href="http://instagram.com"><img src="./6BM_zdjecia/insta.svg"/></a></li>
-					<li class="social-media-menu__item"><a href="http://last.fm"><img src="./6BM_zdjecia/last.svg"/></a></li>
-					<li class="social-media-menu__item"><a href="http://youtube.com"><img src="./6BM_zdjecia/yout.svg"/></a></li>
-				</ul>
-			</footer>
-		</section>
+		</header>
 		<!-- dane zespołu -->
 		<main>
-			<div>
-				<div class="band-member">
-					<img src="./6BM_zdjecia/band-member01.png"/>
-					<h2>Kamil Zgondek</h2>
-					<p>Keyboard</p>
+			<section class="content-section band-members-section">
+				<ul class="band-members">
+					<li class="band-members__item">
+						<img class="active-member" src="./6BM_zdjecia/band-member01.png"/>
+						<p class="band-members__name active-member">Kamil Zgondek</p>
+						<p class="band-members__desc active-member">Keyboard</p>
+					</li>
+					<li class="band-members__item"> 
+						<img src="./6BM_zdjecia/band-member02.png"/>
+						<p class="band-members__name hidden-obj">Łukasz Furman</p>
+						<p class="band-members__desc hidden-obj">Vocals</p>
+					</li>
+					<li class="band-members__item"> 
+						<img src="./6BM_zdjecia/band-member03.png"/>
+						<p class="band-members__name hidden-obj">Kamil Majewski</p>
+						<p class="band-members__desc hidden-obj">Drums</p>
+					</li>
+					<li class="band-members__item"> 
+						<img src="./6BM_zdjecia/band-member04.png"/>
+						<p class="band-members__name hidden-obj">Daniel Cajzer</p>
+						<p class="band-members__desc hidden-obj">Bass guitar</p>
+					</li>
+				</ul>
+			</section>
+			<!-- informacje o zespole -->
+			<section class="content-section band-section">
+				<header>
+					<h2>About</h2>
+				</header>
+				<img src="./6BM_zdjecia/band01.jpg"/>
+				<article id="band-info">
+					<h3>Straight from Lublin</h3>
+					<p>6BM is a young band which has it's origins in the city of Lublin, playing music described as electrorock.<br/> Band members aim to convey emotions, reflexion but also hope.</p>
+					<p>They are inspired by various genres, like: alternative rock, nu-metal, synthwave or even drum'n'bass.<br/> As for now they released their debut EP - TRINITY and they started working on their first full length album.</p>
+				</article>
+
+			</section>
+			<!-- koncerty -->
+			<section class="content-section band-members-section" id="concertsID">
+				<header>
+					<h2>Concerts</h2>
+				</header>
+				<div class="concertsTable">
+					<div class="concert"> <!-- pojedynczy koncert -->
+						<img src="./6BM_zdjecia/band02_WiechnikMarcin.jpg"/>
+						<div class="concert-info">
+							<h3>20.12.2018</h3>
+							<p>Lublin, klub XXX</p>
+							<button>Buy ticket</button>
+						</div>
+					</div>
+					<div class="concert"> <!-- pojedynczy koncert -->
+						<img src="./6BM_zdjecia/band03_WiechnikMarcin.jpg"/>
+						<div class="concert-info">
+							<h3>20.12.2018</h3>
+							<p>Warszawa, klub YYY</p>
+							<button>Buy ticket</button>
+						</div>
+					</div>
+					<div class="concert"> <!-- pojedynczy koncert -->
+						<img src="./6BM_zdjecia/band04_JakubBodys.jpg"/>
+						<div class="concert-info">
+							<h3>20.12.2018</h3>
+							<p>Kraków, klub ZZZ</p>
+							<button>Buy ticket</button>
+						</div>
+					</div>
+					<div class="concert"> <!-- pojedynczy koncert -->
+						<img src="./6BM_zdjecia/band05_JakubBodys.jpg"/>
+						<div class="concert-info">
+							<h3>20.12.2018</h3>
+							<p>Poznań, klub AAA</p>
+							<button>Buy ticket</button>
+						</div>
+					</div>
 				</div>
-				<div class="band-member"> 
-					<img src="./6BM_zdjecia/band-member02.png"/>
-					<h2>Łukasz Furman</h2>
-					<p>Vocals</p>
+			</section>
+			<!-- video -->
+			<section class="content-section">
+				<header>
+					<h2>Video</h2>
+				</header>
+				<iframe class="teledysk" width="560" height="315" src="https://www.youtube.com/embed/AstRXh-vKNI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</section>
+			<!-- zdjęcia -->
+			<section class="content-section">
+				<header>
+					<h2>Photos</h2>
+				</header>
+				<ul class="photo-gallery">
+					<li class="photo-gallery__item"><img src="./6BM_zdjecia/band05_JakubBodys.jpg"/></li>
+					<li class="photo-gallery__item"><img src="./6BM_zdjecia/band06_JakubBodys.jpg"/></li>
+					<li class="photo-gallery__item"><img src="./6BM_zdjecia/band07.jpg"/></li>
+					<li class="photo-gallery__item"><img src="./6BM_zdjecia/band08.jpg"/></li>
+					<li class="photo-gallery__item"><img src="./6BM_zdjecia/band09.jpg"/></li>
+					<li class="photo-gallery__item"><img src="./6BM_zdjecia/band10.jpg"/></li>
+					<li class="photo-gallery__item"><img src="./6BM_zdjecia/band11.jpg"/></li>
+					<li class="photo-gallery__item"><img src="./6BM_zdjecia/band02_WiechnikMarcin.jpg"/></li>
+					<li class="photo-gallery__item"><img src="./6BM_zdjecia/band03_WiechnikMarcin.jpg"/></li>
+				</ul>
+			</section>
+			<!-- kontakt -->
+			<section class="content-section">
+				<header>
+					<h2>Contact</h2>
+				</header>
+				<div class="contact">
+					<img id="contact-photo" src="./6BM_zdjecia/band01.jpg"/>
+					<address>
+						Tel: 0048 999 00 00<br/>
+						e-mail: <a href="6bmband@mail.mail">6bmband@mail.mail</a>
+					</address>
 				</div>
-				<div class="band-member"> 
-					<img src="./6BM_zdjecia/band-member03.png"/>
-					<h2>Kamil Majewski</h2>
-					<p>Drums</p>
-				</div>
-				<div class="band-member"> 
-					<img src="./6BM_zdjecia/band-member04.png"/>
-					<h2>Daniel Cajzer</h2>
-					<p>Bass guitar</p>
-				</div>
-			</div>
+				<form class="contact-form" action="#">
+					<div>
+						<label class="label" for ="email">Email</label>
+						<input type="email" name="email" id="email"><br/>
+					</div>
+					<div>
+						<label class="label" for ="topic">Topic</label>
+						<input type="text" name="topic" id="topic"><br/>
+					</div>
+					<button class="button-sumbit" type="sumbit">Contact us!</button>
+				</form>
+			</section>
 		</main>
-		<!-- informacje o zespole -->
-		<section>
-			<header>
-				<h1>About</h1>
-			</header>
-			<div>
-				<img src="./6BM_zdjecia/band01.jpg"/>
-			</div>
-			<article id="band-info">
-				<h2>Straight from Lublin</h2>
-				<p>6BM is a young band which has it's origins in the city of Lublin, playing music described as electrorock.<br/> Band members aim to convey emotions, reflexion but also hope.</p>
-				<p>They are inspired by various genres, like: alternative rock, nu-metal, synthwave or even drum'n'bass.<br/> As for now they released their debut EP - TRINITY and they started working on their first full length album.</p>
-			</article>
-		</section>
-		<!-- koncerty -->
-		<section>
-			<header>
-				<h1>Concerts</h1>
-			</header>
-			<div> <!-- pojedynczy koncert -->
-				<img src="./6BM_zdjecia/band02_WiechnikMarcin.jpg"/>
-				<div class="concert-info">
-					<h2>20.12.2018</h2>
-					<p>Lublin, klub XXX</p>
-				</div>
-				<button>Buy ticket</button>
-			</div>
-			<div> <!-- pojedynczy koncert -->
-				<img src="./6BM_zdjecia/band03_WiechnikMarcin.jpg"/>
-				<div class="concert-info">
-					<h2>20.12.2018</h2>
-					<p>Warszawa, klub YYY</p>
-				</div>
-				<button>Buy ticket</button>
-			</div>
-			<div> <!-- pojedynczy koncert -->
-				<img src="./6BM_zdjecia/band04_JakubBodys.jpg"/>
-				<div class="concert-info">
-					<h2>20.12.2018</h2>
-					<p>Kraków, klub ZZZ</p>
-				</div>
-				<button>Buy ticket</button>
-			</div>
-			<div> <!-- pojedynczy koncert -->
-				<img src="./6BM_zdjecia/band05_JakubBodys.jpg"/>
-				<div class="concert-info">
-					<h2>20.12.2018</h2>
-					<p>Poznań, klub AAA</p>
-				</div>
-				<button>Buy ticket</button>
-			</div>
-		</section>
-		<!-- video -->
-		<section>
-			<header>
-				<h1>Video</h1>
-			</header>
-			<iframe width="560" height="315" src="https://www.youtube.com/embed/AstRXh-vKNI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-		</section>
-		<!-- zdjęcia -->
-		<section>
-			<header>
-				<h1>Photos</h1>
-			</header>
-			<img src="./6BM_zdjecia/band05_JakubBodys.jpg"/>
-			<img src="./6BM_zdjecia/band06_JakubBodys.jpg"/>
-			<img src="./6BM_zdjecia/band07.jpg"/>
-			<img src="./6BM_zdjecia/band08.jpg"/>
-			<img src="./6BM_zdjecia/band09.jpg"/>
-			<img src="./6BM_zdjecia/band10.jpg"/>
-			<img src="./6BM_zdjecia/band11.jpg"/>
-			<img src="./6BM_zdjecia/band02_WiechnikMarcin.jpg"/>
-			<img src="./6BM_zdjecia/band03_WiechnikMarcin.jpg"/>
-		</section>
-		<!-- kontakt -->
-		<section>
-			<header>
-				<h1>Contact</h1>
-			</header>
-			<div>
-				<img src="./6BM_zdjecia/band01.jpg"/>
-				<address>
-					Tel: 0048 999 00 00<br/>
-					e-mail: <a href="6bmband@mail.mail">6bmband@mail.mail</a>
-				</address>
-			</div>
-			<form action="#">
-				<div>
-					<label for ="email">Email</label>
-					<input type="email" name="email" id="email"><br/>
-				</div>
-				<div>
-					<label for ="topic">Topic</label>
-					<input type="text" name="topic" id="topic"><br/>
-				</div>
-				<button type="sumbit">Contact us!</button>
-			</form>
-		</section>
+		<footer class="page-footer">
+			<ul class="social-media-menu">
+				<li class="social-media-menu__item"><a href="http://fb.com"><img src="./6BM_zdjecia/fb.svg"/></a></li>
+				<li class="social-media-menu__item"><a href="http://instagram.com"><img src="./6BM_zdjecia/insta.svg"/></a></li>
+				<li class="social-media-menu__item"><a href="http://last.fm"><img src="./6BM_zdjecia/last.svg"/></a></li>
+				<li class="social-media-menu__item"><a href="http://youtube.com"><img src="./6BM_zdjecia/yout.svg"/></a></li>
+			</ul>
+		</footer>
 	</body>
 </html>
+
+<!-- 
+	b jest starym znacznikiem, można go używać jeśli sekcja jest istotna
+	id mniej popularne niż klasy
+	tabele były kiedyś do ustawiania layoutu, aktualnie tylko do wyświetlania danych służą
+	można też zapisać <label>blablabla<input/></label> - input w środku
+	za mało list
+	za dużo br
+	-->

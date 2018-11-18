@@ -1,0 +1,199 @@
+*, html {
+	padding:0; 
+	margin:0;
+}
+
+body {
+	margin: 0;
+}
+
+.hidden-obj {
+	display: none;
+}
+
+/* nagłówek */
+.page-header {
+	position: fixed;
+	padding: 20px;
+}
+
+/* stopka */
+.page-footer {
+	position: fixed;
+	left: 0px;
+	bottom: 0px;
+	padding: 20px;
+}
+
+main {
+	position: relative;
+}
+
+h2 {
+	text-align: right;
+	padding: 50px 0px;
+}
+
+.content-section {
+	position: relative;
+	min-height: 100vh;
+	padding: 0vh 6vh 0vh 200px;
+	box-sizing: border-box;
+}
+
+.content-section > img {
+	width: 60%;
+	position: relative;
+	right: -40%;
+	top: 0px;
+}
+
+ul {
+	list-style-type: none;
+	padding: 0px;
+	margin: 0;
+}
+
+/* pierwsza sekcja */ 
+
+.active-member {
+	position: relative;
+	top: 40px;
+}
+
+.band-members-section {
+	background-color: purple;
+}
+
+.band-members {
+	display: table;
+	margin: auto;
+	position: relative;
+	top: 25vh;
+}
+
+.band-members__item {
+	display: inline-block;
+	position: relative;
+	top: 50%;
+}
+
+.band-members__name {
+	text-align: center;
+}
+
+.band-members__desc {
+	text-align: center;
+}
+
+/*sekcja opis*/
+
+#band-info {
+	background-color: lightblue;
+	position: relative;
+	right: -15%;
+	top: -200px;
+	width: 30%;
+	padding: 30px;
+}
+
+/*sekcja koncerty*/
+
+.concertsTable {
+	width: 70%;
+	position: relative;
+	right: -31%;
+	padding: 0px;
+	margin: 0px;
+}
+
+.concert {
+	width:49%;
+	display: inline-block;
+	position: relative;
+	/*margin-right: 30px;*/
+	box-sizing: border-box;
+	margin: 0px;
+	padding: 20px;
+} 
+
+.concert > img {
+	width: 100%;
+}
+
+.concert-info {
+	position: relative;
+}
+
+.concert-info > button {
+	position: absolute;
+	right: 0;
+	top: 0;
+} 
+
+/*sekcja video*/
+
+.teledysk {
+	height: 30vw;
+	width: 70%;
+	position: relative;
+	right: -30%;
+}
+
+/*sekcja photo*/
+
+.photo-gallery {
+	width: 80%;
+	position: relative;
+	right: -20%;
+	padding: 0px;
+	margin: 0px;
+}
+
+.photo-gallery__item {
+	width: 30%;
+	display: inline-block;
+	position: relative;
+}
+
+.photo-gallery__item > img {
+	width: 100%;
+}
+
+/* kontakt */
+
+.contact {
+	display: inline-block;
+	width: 100%;
+}
+
+.contact > address {
+	width: 20%;
+	display: inline-block;
+	position: relative;
+	right: -22vw;
+	top: -10vh;
+}
+
+.contact > img {
+	width: 40%;
+	position: relative;
+	right: -20vw;
+	bottom: -10vh;
+}
+
+.contact-form {
+	display: inline-block;
+	position: relative;
+	bottom: -12vh;
+	right: -20vw;
+}
+
+.label {
+	display: block;
+	margin: 5px 0px;
+}
+
+.button-sumbit {
+	margin: 15px 0px;
+}
