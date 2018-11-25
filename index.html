@@ -3,7 +3,7 @@
 	<head>
 		<title>6BM</title>
 		<meta charset="UTF-8">
-		<link rel="stylesheet" href="styles.css">
+		<link rel="stylesheet" href="style.css">
 	</head>
 	<body>
 		<!-- nawigacja -->
@@ -23,80 +23,89 @@
 			</nav>
 		</header>
 		<!-- dane zespołu -->
-		<main>
+		<main class="page-content">
 			<section class="content-section band-members-section">
 				<ul class="band-members">
 					<li class="band-members__item">
-						<img class="active-member" src="./6BM_zdjecia/band-member01.png"/>
-						<p class="band-members__name active-member">Kamil Zgondek</p>
-						<p class="band-members__desc active-member">Keyboard</p>
+						<img class="band-members__img" src="./6BM_zdjecia/band-member01.png"/>
+						<p class="band-members__name subsection-title">Kamil Zgondek</p>
+						<p class="band-members__desc">Keyboard</p>
 					</li>
 					<li class="band-members__item"> 
-						<img src="./6BM_zdjecia/band-member02.png"/>
-						<p class="band-members__name hidden-obj">Łukasz Furman</p>
-						<p class="band-members__desc hidden-obj">Vocals</p>
+						<img class="band-members__img" src="./6BM_zdjecia/band-member02.png"/>
+						<p class="band-members__name subsection-title">Łukasz Furman</p>
+						<p class="band-members__desc">Vocals</p>
 					</li>
 					<li class="band-members__item"> 
-						<img src="./6BM_zdjecia/band-member03.png"/>
-						<p class="band-members__name hidden-obj">Kamil Majewski</p>
-						<p class="band-members__desc hidden-obj">Drums</p>
+						<img class="band-members__class" src="./6BM_zdjecia/band-member03.png"/>
+						<p class="band-members__name subsection-title">Kamil Majewski</p>
+						<p class="band-members__desc">Drums</p>
 					</li>
 					<li class="band-members__item"> 
-						<img src="./6BM_zdjecia/band-member04.png"/>
-						<p class="band-members__name hidden-obj">Daniel Cajzer</p>
-						<p class="band-members__desc hidden-obj">Bass guitar</p>
+						<img class="band-members__class" src="./6BM_zdjecia/band-member04.png"/>
+						<p class="band-members__name subsection-title">Daniel Cajzer</p>
+						<p class="band-members__desc">Bass guitar</p>
 					</li>
 				</ul>
 			</section>
 			<!-- informacje o zespole -->
 			<section class="content-section band-section">
 				<header>
-					<h2>About</h2>
+					<h2 class="main-title">About</h2>
 				</header>
-				<img src="./6BM_zdjecia/band01.jpg"/>
-				<article id="band-info">
-					<h3>Straight from Lublin</h3>
-					<p>6BM is a young band which has it's origins in the city of Lublin, playing music described as electrorock.<br/> Band members aim to convey emotions, reflexion but also hope.</p>
-					<p>They are inspired by various genres, like: alternative rock, nu-metal, synthwave or even drum'n'bass.<br/> As for now they released their debut EP - TRINITY and they started working on their first full length album.</p>
-				</article>
-
+				<div class="info-section">
+						<article class="band-info bottom-border">
+						<h3 class="subsection-title">Straight from Lublin</h3>
+						<p>6BM is a young band which has it's origins in the city of Lublin, playing music described as electrorock.<br/> Band members aim to convey emotions, reflexion but also hope.</p>
+						<p>They are inspired by various genres, like: alternative rock, nu-metal, synthwave or even drum'n'bass.<br/> As for now they released their debut EP - TRINITY and they started working on their first full length album.</p>
+					</article>
+					<img class="top-border about-image" src="./6BM_zdjecia/band01.jpg"/>
+				</div>
 			</section>
 			<!-- koncerty -->
-			<section class="content-section band-members-section" id="concertsID">
+			<section class="content-section concert-section">
 				<header>
-					<h2>Concerts</h2>
+					<h2 class="main-title">Concerts</h2>
 				</header>
-				<div class="concertsTable">
+				<div class="concerts-table">
 					<div class="concert"> <!-- pojedynczy koncert -->
-						<img src="./6BM_zdjecia/band02_WiechnikMarcin.jpg"/>
+						<img class="bottom-border" src="./6BM_zdjecia/band02_WiechnikMarcin.jpg"/>
 						<div class="concert-info">
-							<h3>20.12.2018</h3>
-							<p>Lublin, klub XXX</p>
-							<button>Buy ticket</button>
+							<div>
+								<h3 class="subsection-title">20.12.2018</h3>
+								<p class="concert-place">Lublin, klub XXX</p>
+							</div>
+							<button class="buy-button">Buy ticket</button>
 						</div>
 					</div>
 					<div class="concert"> <!-- pojedynczy koncert -->
-						<img src="./6BM_zdjecia/band03_WiechnikMarcin.jpg"/>
+						<img class="bottom-border" src="./6BM_zdjecia/band03_WiechnikMarcin.jpg"/>
 						<div class="concert-info">
-							<h3>20.12.2018</h3>
-							<p>Warszawa, klub YYY</p>
-							<button>Buy ticket</button>
+							<div>
+								<h3 class="subsection-title">20.12.2018</h3>
+								<p class="concert-place">Warszawa, klub YYY</p>
+							</div>
+							<button class="buy-button">Buy ticket</button>
 						</div>
 					</div>
 					<div class="concert"> <!-- pojedynczy koncert -->
-						<img src="./6BM_zdjecia/band04_JakubBodys.jpg"/>
+						<img class="bottom-border" src="./6BM_zdjecia/band04_JakubBodys.jpg"/>
 						<div class="concert-info">
-							<h3>20.12.2018</h3>
-							<p>Kraków, klub ZZZ</p>
-							<button>Buy ticket</button>
+							<div>
+								<h3 class="subsection-title">20.12.2018</h3>
+								<p class="concert-place">Kraków, klub ZZZ</p>
+							</div>
+							<button class="buy-button">Buy ticket</button>
 						</div>
 					</div>
 					<div class="concert"> <!-- pojedynczy koncert -->
-						<img src="./6BM_zdjecia/band05_JakubBodys.jpg"/>
+						<img class="bottom-border" src="./6BM_zdjecia/band05_JakubBodys.jpg"/>
 						<div class="concert-info">
-							<h3>20.12.2018</h3>
-							<p>Poznań, klub AAA</p>
-							<button>Buy ticket</button>
+							<div>
+								<h3 class="subsection-title">20.12.2018</h3>
+								<p class="concert-place">Poznań, klub AAA</p>
+							</div>
+							<button class="buy-button">Buy ticket</button>
 						</div>
 					</div>
 				</div>
@@ -104,68 +113,57 @@
 			<!-- video -->
 			<section class="content-section">
 				<header>
-					<h2>Video</h2>
+					<h2 class="main-title">Video</h2>
 				</header>
-				<iframe class="teledysk" width="560" height="315" src="https://www.youtube.com/embed/AstRXh-vKNI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				<iframe class="teledysk top-border" width="1067" height="600" src="https://www.youtube.com/embed/AstRXh-vKNI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 			</section>
 			<!-- zdjęcia -->
-			<section class="content-section">
+			<section class="content-section additional-margin">
 				<header>
-					<h2>Photos</h2>
+					<h2 class="main-title">Photos</h2>
 				</header>
 				<ul class="photo-gallery">
-					<li class="photo-gallery__item"><img src="./6BM_zdjecia/band05_JakubBodys.jpg"/></li>
-					<li class="photo-gallery__item"><img src="./6BM_zdjecia/band06_JakubBodys.jpg"/></li>
-					<li class="photo-gallery__item"><img src="./6BM_zdjecia/band07.jpg"/></li>
-					<li class="photo-gallery__item"><img src="./6BM_zdjecia/band08.jpg"/></li>
-					<li class="photo-gallery__item"><img src="./6BM_zdjecia/band09.jpg"/></li>
-					<li class="photo-gallery__item"><img src="./6BM_zdjecia/band10.jpg"/></li>
-					<li class="photo-gallery__item"><img src="./6BM_zdjecia/band11.jpg"/></li>
-					<li class="photo-gallery__item"><img src="./6BM_zdjecia/band02_WiechnikMarcin.jpg"/></li>
-					<li class="photo-gallery__item"><img src="./6BM_zdjecia/band03_WiechnikMarcin.jpg"/></li>
+					<li class="photo-gallery__item top-border"><img src="./6BM_zdjecia/band05_JakubBodys.jpg"/></li>
+					<li class="photo-gallery__item top-border"><img src="./6BM_zdjecia/band06_JakubBodys.jpg"/></li>
+					<li class="photo-gallery__item top-border"><img src="./6BM_zdjecia/band07.jpg"/></li>
+					<li class="photo-gallery__item top-border"><img src="./6BM_zdjecia/band08.jpg"/></li>
+					<li class="photo-gallery__item top-border"><img src="./6BM_zdjecia/band09.jpg"/></li>
+					<li class="photo-gallery__item top-border"><img src="./6BM_zdjecia/band10.jpg"/></li>
+					<li class="photo-gallery__item top-border"><img src="./6BM_zdjecia/band11.jpg"/></li>
+					<li class="photo-gallery__item top-border"><img src="./6BM_zdjecia/band02_WiechnikMarcin.jpg"/></li>
+					<li class="photo-gallery__item top-border"><img src="./6BM_zdjecia/band03_WiechnikMarcin.jpg"/></li>
 				</ul>
 			</section>
 			<!-- kontakt -->
-			<section class="content-section">
+			<section class="content-section additional-margin">
 				<header>
-					<h2>Contact</h2>
+					<h2 class="main-title">Contact</h2>
 				</header>
 				<div class="contact">
-					<img id="contact-photo" src="./6BM_zdjecia/band01.jpg"/>
-					<address>
+					<img class="contact-photo" src="./6BM_zdjecia/band01.jpg"/>
+					<address class="contact-address">
 						Tel: 0048 999 00 00<br/>
 						e-mail: <a href="6bmband@mail.mail">6bmband@mail.mail</a>
 					</address>
 				</div>
 				<form class="contact-form" action="#">
-					<div>
+					
 						<label class="label" for ="email">Email</label>
-						<input type="email" name="email" id="email"><br/>
-					</div>
-					<div>
+						<input type="email" name="email" class="form-input">
+					
 						<label class="label" for ="topic">Topic</label>
-						<input type="text" name="topic" id="topic"><br/>
-					</div>
+						<input type="text" name="topic" class="form-input">
+					
 					<button class="button-sumbit" type="sumbit">Contact us!</button>
 				</form>
 			</section>
 		</main>
 		<footer class="page-footer">
 			<ul class="social-media-menu">
-				<li class="social-media-menu__item"><a href="http://fb.com"><img src="./6BM_zdjecia/fb.svg"/></a></li>
-				<li class="social-media-menu__item"><a href="http://instagram.com"><img src="./6BM_zdjecia/insta.svg"/></a></li>
-				<li class="social-media-menu__item"><a href="http://last.fm"><img src="./6BM_zdjecia/last.svg"/></a></li>
-				<li class="social-media-menu__item"><a href="http://youtube.com"><img src="./6BM_zdjecia/yout.svg"/></a></li>
+				<li><a href="http://fb.com"><img class="social-media-menu__item" src="./6BM_zdjecia/fb.svg"/></a></li>
+				<li><a href="http://instagram.com"><img class="social-media-menu__item" src="./6BM_zdjecia/insta.svg"/></a></li>
+				<li><a href="http://last.fm"><img class="social-media-menu__item" src="./6BM_zdjecia/last.svg"/></a></li>
+				<li><a href="http://youtube.com"><img class="social-media-menu__item" src="./6BM_zdjecia/yout.svg"/></a></li>
 			</ul>
 		</footer>
 	</body>
-</html>
-
-<!-- 
-	b jest starym znacznikiem, można go używać jeśli sekcja jest istotna
-	id mniej popularne niż klasy
-	tabele były kiedyś do ustawiania layoutu, aktualnie tylko do wyświetlania danych służą
-	można też zapisać <label>blablabla<input/></label> - input w środku
-	za mało list
-	za dużo br
-	-->

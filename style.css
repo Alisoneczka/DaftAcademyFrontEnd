@@ -1,0 +1,258 @@
+/* reset */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url("./6BM_zdjecia/background.svg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #25072e;
+    color: rgba(204,200,255,0.5);
+    font-family: 'Open Sans', arial, sans-serif;
+    font-size: 13px;
+    letter-spacing: 2px;
+
+}
+
+h1, h2, h3 {
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+/*style fontów*/
+
+.main-title {
+	font-size: 28px;
+	font-weight: bold;
+	color: #EF008E;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	margin-bottom: 5%;
+}
+
+.subsection-title {
+	color: #ccc8ff;
+	font-size: 15px;
+	font-weight:  bold;
+	text-transform: uppercase;
+	letter-spacing: 4px;
+}
+
+.main-menu__item {
+	color: #ef008e;
+	font-size: 13px;
+	font-weight: bold;
+	text-transform: uppercase;
+	letter-spacing: 4px;
+	margin: 8px 0px;
+}
+
+/*bordery*/
+
+.top-border {
+	border-top: 5px solid #ef008e;
+}
+
+.bottom-border {
+	border-bottom: 5px solid #ef008e;
+}
+
+/* nagłówek */
+.page-header {
+	position: fixed;
+	top: 50px;
+	left: 50px;
+}
+
+/* stopka */
+.page-footer {
+	position: fixed;
+	left: 50px;
+	bottom: 50px;
+}
+
+.social-media-menu__item {
+	width: 22px;
+	margin: 4px 0px;
+}
+
+.page-content {
+	margin-left: 220px;
+    padding: 0 5%;
+    text-align: right;
+}
+
+.additional-margin {
+	margin-left: 15%;
+}
+
+.content-section {
+	min-height: 100vh;
+	padding-top: 8%;
+}
+
+/* sekcja członków zespołu */
+
+.band-members-section {
+	display: flex;
+	align-items: center;
+}
+
+.band-members {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.band-members__item {
+	display: inline-block;
+}
+
+.band-members__img {
+	/*width: 100%;*/
+}
+
+.band-members__name {
+	text-align: left;
+}
+
+.band-members__desc {
+	text-align: left;
+}
+
+/* sekcja opis */
+
+.about-image {
+	width: 60%;
+}
+
+.band-info {
+	background-color: #25072e;
+	width: 400px;
+	text-align: left;
+	padding: 50px 40px;
+	display: inline-block;
+	position: relative;
+	left: 8%;
+}
+
+/* sekcja koncerty */
+
+.concert-section {
+	padding-left: 40%;
+}
+
+.concerts-table {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.concert {
+	width: 48%;
+	align-items: flex-start;
+	margin-bottom: 40px;
+}
+
+.concert > img {
+	width: 100%;
+	margin-bottom: 10px;
+}
+
+.concert-info {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	text-align: left;
+}
+
+.concert-place {
+	margin: 0;
+	padding: 0;
+}
+
+/* sekcja zdjęcia */
+.photo-gallery {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.photo-gallery__item {
+	width: 32%;
+}
+
+.photo-gallery__item > img {
+	width: 100%;
+}
+
+/* sekcja kontakt */
+
+.contact {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	text-align: left;
+}
+
+.contact-photo {
+	width: 40%;
+}
+
+.contact-address {
+	margin-left: 50px;
+}
+
+.contact-form {
+	margin-top: 50px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: left;
+}
+
+.form-input {
+	background-color: #25072e;
+	border: none;
+	border-radius: 5px;
+	color: rgba(204,200,255,0.5);
+	height: 34px;
+	width: 300px;
+	padding: 0px 10px;
+	margin: 10px 0px;
+}
+
+.button-sumbit, .buy-button {
+	background-color: #25072e;
+	border: none;
+	border-radius: 5px;
+	color: rgba(204,200,255,0.5);
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	height: 34px;
+	width: 150px;
+	padding: 0px 10px;
+	margin: 10px 0px;
+}
+
+.buy-button {
+	color: #ccc8ff;
+	margin: 0px;
+}
