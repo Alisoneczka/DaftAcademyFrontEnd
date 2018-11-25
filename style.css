@@ -7,16 +7,17 @@
 body {
     margin: 0;
     padding: 0;
-    background-image: url("./6BM_zdjecia/background.svg");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    background-color: #25072e;
+
     color: rgba(204,200,255,0.5);
     font-family: 'Open Sans', arial, sans-serif;
     font-size: 13px;
     letter-spacing: 2px;
 
+    background-image: url("./6BM_zdjecia/background.svg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #25072e;
 }
 
 h1, h2, h3 {
@@ -36,11 +37,18 @@ a {
 
 /*style fontów*/
 
-.main-title {
-	font-size: 28px;
+.main-title, .subsection-title, .main-menu__item {
 	font-weight: bold;
-	color: #EF008E;
 	text-transform: uppercase;
+}
+
+.subsection-title, .main-menu__item {
+	letter-spacing: 4px;
+}
+
+.main-title {
+	color: #EF008E;
+	font-size: 28px;
 	letter-spacing: 2px;
 	margin-bottom: 5%;
 }
@@ -48,21 +56,15 @@ a {
 .subsection-title {
 	color: #ccc8ff;
 	font-size: 15px;
-	font-weight:  bold;
-	text-transform: uppercase;
-	letter-spacing: 4px;
 }
 
 .main-menu__item {
 	color: #ef008e;
 	font-size: 13px;
-	font-weight: bold;
-	text-transform: uppercase;
-	letter-spacing: 4px;
 	margin: 8px 0px;
 }
 
-/*bordery*/
+/*bordery zdjęć*/
 
 .top-border {
 	border-top: 5px solid #ef008e;
@@ -72,33 +74,34 @@ a {
 	border-bottom: 5px solid #ef008e;
 }
 
+/* pozycjonowanie elementów */
+
+.page-header, .page-footer {
+	position: fixed;
+	left: 50px;
+}
+
 /* nagłówek */
 .page-header {
-	position: fixed;
 	top: 50px;
-	left: 50px;
 }
 
 /* stopka */
 .page-footer {
-	position: fixed;
-	left: 50px;
 	bottom: 50px;
 }
 
 .social-media-menu__item {
-	width: 22px;
 	margin: 4px 0px;
+	width: 22px;
 }
+
+/* dane ogólne */ 
 
 .page-content {
+	text-align: right;
 	margin-left: 220px;
     padding: 0 5%;
-    text-align: right;
-}
-
-.additional-margin {
-	margin-left: 15%;
 }
 
 .content-section {
@@ -106,93 +109,70 @@ a {
 	padding-top: 8%;
 }
 
-/* sekcja członków zespołu */
+.additional-margin {
+	margin-left: 15%;
+}
 
-.band-members-section {
+.band-members-section, .band-members, .concerts-table, .concert-info, .photo-gallery, .contact, .contact-form {
 	display: flex;
+	flex-wrap: wrap;
+}
+
+.band-members__item, .band-info {
+	display: inline-block;
+}
+
+.band-members-section, .contact {
 	align-items: center;
 }
 
 .band-members {
-	width: 100%;
-	display: flex;
 	justify-content: center;
-	flex-wrap: wrap;
+	width: 100%;
 }
 
-.band-members__item {
-	display: inline-block;
-}
-
-.band-members__img {
-	/*width: 100%;*/
-}
-
-.band-members__name {
+.band-members__name, .band-members__desc, .band-info, .concert-info, .contact, .contact-form {
 	text-align: left;
-}
-
-.band-members__desc {
-	text-align: left;
-}
-
-/* sekcja opis */
-
-.about-image {
-	width: 60%;
 }
 
 .band-info {
 	background-color: #25072e;
-	width: 400px;
-	text-align: left;
 	padding: 50px 40px;
-	display: inline-block;
 	position: relative;
 	left: 8%;
+	width: 400px;
 }
 
-/* sekcja koncerty */
+.concert-info, .concerts-table, .photo-gallery {
+	justify-content: space-between;
+}
+
+.concert {
+	align-items: flex-start;
+	margin-bottom: 40px;
+	width: 48%;
+}
+
+.concert > img {
+	margin-bottom: 10px;
+	width: 100%;
+}
 
 .concert-section {
 	padding-left: 40%;
 }
 
-.concerts-table {
-	width: 100%;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
-}
-
-.concert {
-	width: 48%;
-	align-items: flex-start;
-	margin-bottom: 40px;
-}
-
-.concert > img {
-	width: 100%;
-	margin-bottom: 10px;
-}
-
-.concert-info {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
-	text-align: left;
-}
-
 .concert-place {
-	margin: 0;
 	padding: 0;
+	margin: 0;
 }
 
-/* sekcja zdjęcia */
-.photo-gallery {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
+.contact-address {
+	margin-left: 50px;
+}
+
+.about-image {
+	width: 60%;
 }
 
 .photo-gallery__item {
@@ -203,53 +183,34 @@ a {
 	width: 100%;
 }
 
-/* sekcja kontakt */
-
-.contact {
-	display: flex;
-	flex-wrap: wrap;
-	align-items: center;
-	text-align: left;
-}
-
 .contact-photo {
 	width: 40%;
 }
 
-.contact-address {
-	margin-left: 50px;
-}
-
 .contact-form {
-	margin-top: 50px;
-	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	text-align: left;
+	margin-top: 50px;
+}
+
+.form-input, .button-sumbit, .buy-button{
+	background-color: #25072e;
+	border: none;
+	border-radius: 5px;
+	color: rgba(204,200,255,0.5);
+	height: 34px;
+	padding: 0px 10px;
+	margin: 10px 0px;
 }
 
 .form-input {
-	background-color: #25072e;
-	border: none;
-	border-radius: 5px;
-	color: rgba(204,200,255,0.5);
-	height: 34px;
 	width: 300px;
-	padding: 0px 10px;
-	margin: 10px 0px;
 }
 
 .button-sumbit, .buy-button {
-	background-color: #25072e;
-	border: none;
-	border-radius: 5px;
-	color: rgba(204,200,255,0.5);
 	text-transform: uppercase;
 	letter-spacing: 2px;
-	height: 34px;
 	width: 150px;
-	padding: 0px 10px;
-	margin: 10px 0px;
 }
 
 .buy-button {
