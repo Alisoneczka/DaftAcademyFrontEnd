@@ -70,42 +70,42 @@
 				<div class="concerts-table">
 					<div class="concert"> <!-- pojedynczy koncert -->
 						<img class="bottom-border" src="./6BM_zdjecia/band02_WiechnikMarcin.jpg"/>
-						<div class="concert-info">
-							<div>
+						<div class="buy-panel">
+							<div class="concert-info">
 								<h3 class="subsection-title">20.12.2018</h3>
 								<p class="concert-place">Lublin, klub XXX</p>
 							</div>
-							<button class="buy-button">Buy ticket</button>
+							<button class="button">Buy ticket</button>
 						</div>
 					</div>
 					<div class="concert"> <!-- pojedynczy koncert -->
 						<img class="bottom-border" src="./6BM_zdjecia/band03_WiechnikMarcin.jpg"/>
-						<div class="concert-info">
-							<div>
+						<div class="buy-panel">
+							<div class="concert-info">
 								<h3 class="subsection-title">20.12.2018</h3>
 								<p class="concert-place">Warszawa, klub YYY</p>
 							</div>
-							<button class="buy-button">Buy ticket</button>
+							<button class="button">Buy ticket</button>
 						</div>
 					</div>
 					<div class="concert"> <!-- pojedynczy koncert -->
 						<img class="bottom-border" src="./6BM_zdjecia/band04_JakubBodys.jpg"/>
-						<div class="concert-info">
-							<div>
+						<div class="buy-panel">
+							<div class="concert-info">
 								<h3 class="subsection-title">20.12.2018</h3>
 								<p class="concert-place">Kraków, klub ZZZ</p>
 							</div>
-							<button class="buy-button">Buy ticket</button>
+							<button class="button">Buy ticket</button>
 						</div>
 					</div>
 					<div class="concert"> <!-- pojedynczy koncert -->
 						<img class="bottom-border" src="./6BM_zdjecia/band05_JakubBodys.jpg"/>
-						<div class="concert-info">
-							<div>
+						<div class="buy-panel">
+							<div class="concert-info">
 								<h3 class="subsection-title">20.12.2018</h3>
 								<p class="concert-place">Poznań, klub AAA</p>
 							</div>
-							<button class="buy-button">Buy ticket</button>
+							<button class="button">Buy ticket</button>
 						</div>
 					</div>
 				</div>
@@ -123,15 +123,15 @@
 					<h2 class="main-title">Photos</h2>
 				</header>
 				<ul class="photo-gallery">
-					<li class="photo-gallery__item top-border"><img src="./6BM_zdjecia/band05_JakubBodys.jpg"/></li>
-					<li class="photo-gallery__item top-border"><img src="./6BM_zdjecia/band06_JakubBodys.jpg"/></li>
-					<li class="photo-gallery__item top-border"><img src="./6BM_zdjecia/band07.jpg"/></li>
-					<li class="photo-gallery__item top-border"><img src="./6BM_zdjecia/band08.jpg"/></li>
-					<li class="photo-gallery__item top-border"><img src="./6BM_zdjecia/band09.jpg"/></li>
-					<li class="photo-gallery__item top-border"><img src="./6BM_zdjecia/band10.jpg"/></li>
-					<li class="photo-gallery__item top-border"><img src="./6BM_zdjecia/band11.jpg"/></li>
-					<li class="photo-gallery__item top-border"><img src="./6BM_zdjecia/band02_WiechnikMarcin.jpg"/></li>
-					<li class="photo-gallery__item top-border"><img src="./6BM_zdjecia/band03_WiechnikMarcin.jpg"/></li>
+					<li class="photo-gallery__item"><img src="./6BM_zdjecia/band05_JakubBodys.jpg"/></li>
+					<li class="photo-gallery__item"><img src="./6BM_zdjecia/band06_JakubBodys.jpg"/></li>
+					<li class="photo-gallery__item"><img src="./6BM_zdjecia/band07.jpg"/></li>
+					<li class="photo-gallery__item"><img src="./6BM_zdjecia/band08.jpg"/></li>
+					<li class="photo-gallery__item"><img src="./6BM_zdjecia/band09.jpg"/></li>
+					<li class="photo-gallery__item"><img src="./6BM_zdjecia/band10.jpg"/></li>
+					<li class="photo-gallery__item"><img src="./6BM_zdjecia/band11.jpg"/></li>
+					<li class="photo-gallery__item"><img src="./6BM_zdjecia/band02_WiechnikMarcin.jpg"/></li>
+					<li class="photo-gallery__item"><img src="./6BM_zdjecia/band03_WiechnikMarcin.jpg"/></li>
 				</ul>
 			</section>
 			<!-- kontakt -->
@@ -140,22 +140,23 @@
 					<h2 class="main-title">Contact</h2>
 				</header>
 				<div class="contact">
-					<img class="contact-photo" src="./6BM_zdjecia/band01.jpg"/>
+					<img class="contact-photo" src="./6BM_zdjecia/band12.jpg"/>
 					<address class="contact-address">
 						Tel: 0048 999 00 00<br/>
 						e-mail: <a href="6bmband@mail.mail">6bmband@mail.mail</a>
 					</address>
+					<form class="contact-form" action="#">
+						<div class="form-field">
+							<label class="label" for ="email">Email</label><br/>
+							<input type="email" name="email" class="form-input">
+						</div>
+						<div class="form-field">
+							<label class="label" for ="topic">Topic</label><br/>
+							<input type="text" name="topic" class="form-input">
+						</div>
+						<button class="button" type="sumbit">Contact us!</button>
+					</form>
 				</div>
-				<form class="contact-form" action="#">
-					
-						<label class="label" for ="email">Email</label>
-						<input type="email" name="email" class="form-input">
-					
-						<label class="label" for ="topic">Topic</label>
-						<input type="text" name="topic" class="form-input">
-					
-					<button class="button-sumbit" type="sumbit">Contact us!</button>
-				</form>
 			</section>
 		</main>
 		<footer class="page-footer">
