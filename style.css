@@ -57,7 +57,11 @@ a {
 	font-size: 15px;
 }
 
-/* główne menu */
+/* 
+***********************
+główne menu 
+***********************
+*/
 
 
 .main-menu__item {
@@ -66,14 +70,16 @@ a {
 
 .main-menu__item > a {
 	color: rgb(239, 0, 142);
-	opacity: 0.6;
+	opacity: 0.8;
     letter-spacing: 6.7px;
     font-size: 13px;
 	transition: all 0.1s ease-in;
 }
 
 
-/* style akcji menu */
+/* 
+style akcji menu 
+*/
 
 .main-menu__item > a:hover, .main-menu__item > a:focus {
 	letter-spacing: 6.5px;
@@ -85,8 +91,16 @@ a {
 	opacity: 0.6;
 }
 
+.main-menu__item > a:disabled {
+	opacity: 0.4;
+}
 
-/*bordery zdjęć*/
+
+/*
+*******************
+bordery zdjęć
+*******************
+*/
 
 .top-border {
 	border-top: 5px solid #ef008e;
@@ -96,7 +110,11 @@ a {
 	border-bottom: 5px solid #ef008e;
 }
 
-/* buttony */
+/*
+*******************
+buttony 
+*******************
+*/
 
 .button {
     padding: 7px 15px;
@@ -116,8 +134,13 @@ a {
 
 /* stany buttonów */
 
-.button:hover, .button:active {
+.button:hover {
 	background-color: rgba(204, 200, 255, 0.3);
+}
+
+.button:active {
+	background-color: rgba(204, 200, 255, 0.2);
+    color: rgba(204, 200, 255, 0.5);
 }
 
 .button:focus {
@@ -130,14 +153,24 @@ a {
 	color: rgba(204, 200, 255, 0.3);
 }
 
-/* nagłówek */
+/* 
+********************
+nagłówek 
+********************
+*/
+
 .page-header {
 	position: fixed;
 	left: 50px;
 	top: 50px;
 }
 
-/* stopka */
+/*
+*********************
+ stopka 
+ ********************
+ */
+
 .page-footer {
 	position: fixed;
 	left: 50px;
@@ -147,9 +180,13 @@ a {
 .social-media-menu__item {
 	margin: 4px 0px;
 	width: 22px;
-	opacity: 0.6;
+	opacity: 0.8;
 	transition: opacity 0.2s ease-in;
 }
+
+/*
+stany ikon social media
+*/
 
 .social-media-menu__item:hover, .social-media-menu__item:focus {
 	opacity: 1;
@@ -158,14 +195,26 @@ a {
 	opacity: 0.6;
 }
 
-/* dane ogólne */ 
+.social-media-menu__item:disabled {
+	opacity: 0.4;
+}
+
+/*
+**********************
+ dane ogólne 
+ **********************
+ */ 
 
 .page-content {
 	margin-left: 220px;
     padding: 0 10%;
 }
 
-/* poszczególne sekcje */
+/* 
+***********************
+poszczególne sekcje 
+***********************
+*/
 
 .content-section {
 	display: flex;
@@ -180,7 +229,11 @@ a {
 	margin-bottom: 50px;
 }
 
-/* sekcja zespołu */
+/*
+************************
+sekcja zespołu 
+************************
+*/
 
 .band-members-section {
 	align-items: center;
@@ -191,6 +244,7 @@ a {
 	flex-direction: row;
 	align-items: center;
 	flex-wrap: wrap;
+	margin-top: 13vh;
 }
 
 .band-members__img {
@@ -215,7 +269,11 @@ a {
 	opacity: 1;
 }
 
-/* sekcja about */
+/*
+********************
+sekcja about
+********************
+ */
 
 .info-section {
 	position: relative;
@@ -236,7 +294,11 @@ a {
 	background-color: #25072e;
 }
 
-/* sekcja concerts */
+/* 
+*********************
+sekcja concerts 
+*********************
+*/
 
 .concerts-table {
 	display: flex;
@@ -271,7 +333,11 @@ a {
 	margin-bottom: 0px;
 }
 
-/* sekcja galeria */
+/*
+**********************
+sekcja galeria
+**********************
+*/
 
 .photo-gallery {
 	display: flex;
@@ -291,9 +357,19 @@ a {
 	transition: all 0.1s ease-in;
 }
 
+/*
+stan galerii
+*/
+
 .gallery__image:hover {
 	transform: scale(1.07);
 }
+
+/*
+*******************
+sekcja contact
+*******************
+*/
 
 .contact {
 	display: flex;
